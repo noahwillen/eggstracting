@@ -1,0 +1,15 @@
+{
+  "type": "eggstracting:add_enchanted_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/desert_pyramid"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "enchantment": "eggstracting:eggstracting",
+  "item": "minecraft:enchanted_book"
+}
