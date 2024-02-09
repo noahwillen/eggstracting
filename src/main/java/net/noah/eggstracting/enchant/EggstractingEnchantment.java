@@ -22,16 +22,20 @@ public class EggstractingEnchantment extends Enchantment {
         super(Rarity.VERY_RARE, EnchantmentCategory.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
-    public int getMinCost(int pEnchantmentLevel) {
-        return 5 + (pEnchantmentLevel - 1) * 9;
-    }
-
-    public int getMaxCost(int pEnchantmentLevel) {
-        return this.getMinCost(pEnchantmentLevel) + 15;
-    }
-
     public int getMaxLevel() {
         return 3;
+    }
+
+    public boolean isTreasureOnly() {
+        return true;
+    }
+
+    public boolean isTradeable() {
+        return false;
+    }
+
+    public boolean isDiscoverable() {
+        return false;
     }
 
 
